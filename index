@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>BENJAMIN</b> Levin-Lozovatsky</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">EXPLORATIONS</a>
+      <a href="#about" class="w3-bar-item w3-button">WHO I AM</a>
+      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="C:\Users\benle\OneDrive - Thomas Jefferson University\College\FALL 2025\DESIGN\Structure\Analysis\Analysis proccess\4\axon arctic.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+  </div>
+</header>
+
+<!-- ============================= -->
+<!--        PROJECTS SECTION       -->
+<!-- ============================= -->
+
+<div class="w3-container w3-padding-32" id="projects">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">EXPLORATIONS</h3>
+</div>
+
+<!-- ============================= -->
+<!--        PROJECT GRID           -->
+<!-- ============================= -->
+
+<div class="w3-row-padding">
+
+  <!-- ===== Project 1 ===== -->
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container w3-hover-opacity" onclick="openModal('modal1')">
+      <div class="w3-display-topleft w3-black w3-padding">A NEGOTIATION OF SPACE</div>
+      <img src="C:\Users\benle\OneDrive - Thomas Jefferson University\College\FALL 2025\DESIGN\Structure\Analysis\Analysis proccess\4\axon arctic.jpg" alt="A Negotiation of Space" style="width:100%;">
+    </div>
+  </div>
+
+  <!-- ===== Project 2 ===== -->
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container w3-hover-opacity" onclick="openModal('modal2')">
+      <div class="w3-display-topleft w3-black w3-padding">THE 4RT OF RESPECT</div>
+      <img src="images/respect1.jpg" alt="The 4RT of Respect" style="width:100%;">
+    </div>
+  </div>
+
+  <!-- ===== Project 3 ===== -->
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container w3-hover-opacity" onclick="openModal('modal3')">
+      <div class="w3-display-topleft w3-black w3-padding">NORTH EAST NEXUS</div>
+      <img src="images/nexus1.jpg" alt="North East Nexus" style="width:100%;">
+    </div>
+  </div>
+
+  <!-- ===== Project 4 ===== -->
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container w3-hover-opacity" onclick="openModal('modal4')">
+      <div class="w3-display-topleft w3-black w3-padding">ZEPHYR SCRIBE</div>
+      <img src="images/zephyr1.jpg" alt="Zephyr Scribe" style="width:100%;">
+    </div>
+  </div>
+
+</div> <!-- End of Project Grid -->
+
+
+<!-- ============================= -->
+<!--          MODALS               -->
+<!-- ============================= -->
+
+<!-- ===== Modal 1: A NEGOTIATION OF SPACE ===== -->
+<div id="modal1" class="w3-modal">
+  <div class="w3-modal-content w3-animate-opacity modal-box">
+    <span class="w3-button w3-display-topright w3-text-white close-btn" onclick="closeModal('modal1')">&times;</span>
+    <div class="modal-content-area">
+      <img src="C:\Users\benle\OneDrive - Thomas Jefferson University\College\FALL 2025\DESIGN\Structure\Analysis\Analysis proccess\4\axon arctic.jpg" class="modal-image">
+      <img src="C:\Users\benle\OneDrive - Thomas Jefferson University\College\FALL 2025\DESIGN\Structure\Analysis\Analysis proccess\4\axon arctic.jpg" class="modal-image">
+      <img src="C:\Users\benle\OneDrive - Thomas Jefferson University\College\FALL 2025\DESIGN\Structure\Analysis\Analysis proccess\4\axon arctic.jpg" class="modal-image">
+      <p class="w3-text-white modal-description">
+        This project explores spatial negotiation through light, mass, and human movement,
+        balancing openness and enclosure.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Modal 2: THE 4RT OF RESPECT ===== -->
+<div id="modal2" class="w3-modal">
+  <div class="w3-modal-content w3-animate-opacity modal-box">
+    <span class="w3-button w3-display-topright w3-text-white close-btn" onclick="closeModal('modal2')">&times;</span>
+    <div class="modal-content-area">
+      <img src="images/respect1.jpg" class="modal-image">
+      <img src="images/respect2.jpg" class="modal-image">
+      <p class="w3-text-white modal-description">
+        An exploration of form and dignity — designing spaces that honor human presence
+        and collective respect.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Modal 3: NORTH EAST NEXUS ===== -->
+<div id="modal3" class="w3-modal">
+  <div class="w3-modal-content w3-animate-opacity modal-box">
+    <span class="w3-button w3-display-topright w3-text-white close-btn" onclick="closeModal('modal3')">&times;</span>
+    <div class="modal-content-area">
+      <img src="images/nexus1.jpg" class="modal-image">
+      <img src="images/nexus2.jpg" class="modal-image">
+      <img src="images/nexus3.jpg" class="modal-image">
+      <p class="w3-text-white modal-description">
+        A community hub connecting cultures and generations through light,
+        circulation, and shared space.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Modal 4: ZEPHYR SCRIBE ===== -->
+<div id="modal4" class="w3-modal">
+  <div class="w3-modal-content w3-animate-opacity modal-box">
+    <span class="w3-button w3-display-topright w3-text-white close-btn" onclick="closeModal('modal4')">&times;</span>
+    <div class="modal-content-area">
+      <img src="images/zephyr1.jpg" class="modal-image">
+      <img src="images/zephyr2.jpg" class="modal-image">
+      <p class="w3-text-white modal-description">
+        Zephyr Scribe captures the poetry of wind and structure — lightness rendered tangible.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================= -->
+<!--         SCRIPTS               -->
+<!-- ============================= -->
+
+<script>
+function openModal(id) {
+  document.getElementById(id).style.display = 'block';
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+</script>
+
+
+<!-- ============================= -->
+<!--         STYLES                -->
+<!-- ============================= -->
+
+<style>
+/* ========== Responsive Grid ========== */
+@media (max-width: 600px) {
+  .w3-col {
+    width: 50% !important;
+  }
+}
+
+/* ========== Hover Interaction ========== */
+.w3-display-container {
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.w3-display-container:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.85);
+}
+
+/* ========== Modal Styles ========== */
+.modal-box {
+  max-width: 100%;
+  border: 8px solid white;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.8);
+  margin: 40px auto;
+}
+
+.modal-content-area {
+  padding: 24px;
+  text-align: center;
+}
+
+.modal-image {
+  width: 95%;
+  margin-bottom: 12px;
+  outline: 3px solid white;
+  border-radius: 4px;
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+.close-btn {
+  font-size: 40px;
+  top: 10px;
+  right: 20px;
+
+}
+</style>
+
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">WHO I AM</h3>
+    <p>I move through design and life, with curiosity and care. I’m drawn to things that feel real, the kind you can’t fake: honest materials, genuine people, and work that says something quietly but with conviction. I put my heart into what I make, always learning, always listening, trying to build not just structures but meaning. I don’t rush; I refine. I want my work to breathe, to connect people, place, and purpose in a way that feels both grounded and alive.
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">WHAT I WANT</h3>
+      <p>I want to work with a team that values real collaboration where ideas move both ways and curiosity is part of the culture. I’m drawn to mentors who teach with generosity but remain open to learning, and to projects that challenge me to think deeply and design thoughtfully. Above all, I hope my work improves people’s lives and contributes positively to the world, creating spaces that are meaningful, humane, and lasting.
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">WHAT I CAN DO</h3>
+        <p>My youth and passion for creativity drive me to approach every architectural challenge with a fresh, open perspective. I’m deeply committed to learning and refining my craft, balancing technical precision with a sensitivity to the emotional impact of design. With a strong work ethic and dependable character, I contribute thoughtfully and collaboratively to every team, ensuring that each project is completed with care and purpose.
+    </p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
